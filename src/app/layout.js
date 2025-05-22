@@ -19,6 +19,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html>
+          <head>
+          <link rel="icon" href="./images/doctor.gif" />
+          </head>
             <body className={font.variable}>{children}</body>
         </html>
     );

@@ -7,7 +7,19 @@ import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import styles from "./Pacientes.module.css";
 
-const HEADERS = { "x-api-key": process.env.NEXT_PUBLIC_API_KEY };
+
+axios.get("http://localhost:4000/api/pacientes", {
+  headers: {
+    "x-api-key": "iX4O72aCwd5rd2OsH5dP"
+  }
+})
+  .then((response) => {
+    console.log(response.data);
+  })
+  .catch((error) => {
+    console.error("Erro:", error.response?.data || error.message);
+  });
+
 
 export default function Pacientes() {
   const [data, setData] = useState({
@@ -80,7 +92,7 @@ export default function Pacientes() {
         showSizeChanger
         pageSizeOptions={["5", "10", "100"]}
       />
-
+      
       {data.loading ? (
         <Image
           src="/images/doctor.gif"

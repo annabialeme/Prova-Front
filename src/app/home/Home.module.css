@@ -1,6 +1,6 @@
 .card {
     width: 850px;
-    margin-left: 200px;
+    margin-left: 400px;
     padding: 0 40px 0 0;
     background-color: rgb(233, 253, 253);
 }
@@ -8,7 +8,7 @@
 .imageContainer {
     width: 350px;
     height: 450px;
-    padding: 150px;
+    padding: 200px;
     position: relative;
 }
 
