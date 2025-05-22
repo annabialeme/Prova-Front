@@ -1,0 +1,22 @@
+.card {
+    width: 850px;
+    margin-left: 200px;
+    padding: 0 40px 0 0;
+    background-color: rgb(233, 253, 253);
+}
+
+.imageContainer {
+    width: 350px;
+    height: 450px;
+    padding: 150px;
+    position: relative;
+}
+
+.image {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.list {
+    padding: 0 0 25px 30px;
+}
